@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# This will output to a CSV formatted as:
+# user [user name]
+# groups [group1,group2....]
+# vaults [vault1,vault2...]
+# user [user name]
+# groups [group1,group2....]
+# vaults [vault1,vault2...]
+
 opusers=$(op list users --cache | jq --raw-output '.[].uuid')
 
 
@@ -28,13 +36,7 @@ whileExport
 
 
 
-# This will output to a CSV formatted as:
-# user [user name]
-# groups [group1,group2....]
-# vaults [vault1,vault2...]
-# user [user name]
-# groups [group1,group2....]
-# vaults [vault1,vault2...]
+
 # simpleExport(){
 # 
 # 	for user in $opusers
