@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# function_test(){
-# 	echo "this is the first line of the function"
-# 	test="variable value"
-# 	echo $test
-# }
-# 
-# function_test
-
 opusers=$(op list users --cache | jq --raw-output '.[].uuid')
 
 
