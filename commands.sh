@@ -24,3 +24,18 @@ op confirm --all
 op list users --group "Team Leads" | op get user - | jq '.name, .email'
 
 
+
+
+### Live Demo ###
+#################
+# get to correct directory
+cd /Users/scottatwork/op-cli-examples
+
+# Create a csv with specific fields for items in a specific vault.  
+op list items --categories Login --vault Private | op get item - --fields website,username,password --format CSV > export.csv
+
+# get the details for all vaults that the Managers group has access to
+op list vaults --group Managers | op get vault - | jq
+
+## run the custom script to get users, vaults, groups
+. ./script.sh
