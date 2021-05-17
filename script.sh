@@ -15,15 +15,15 @@ whileExport(){
 	while read -r line
 		do
 			userName=$(op get user $line | jq --raw-output '.name')  # gets user's name based on UUID
-			echo 'USER:' $userName >> test.csv
+			echo 'USER:' $userName >> test.txt
 		
 			# GROUPS - For each group the person is a member of, append it to a variable separated by a comma, then append the entire string to a csv file
 			userGroups=$(op list groups --user $line | jq --raw-output '.[].name')
-			echo 'GROUPS:' ${userGroups//$'\n'/', '} >> test.csv
+			echo 'GROUPS:' ${userGroups//$'\n'/', '} >> test.txt
 		
 			# VAULTS - For each vault the person has access to, append it to a variable separated by a comma, then append the entire string to a csv file
 			userVaults=$(op list vaults --user $line | jq --raw-output '.[].name')
-			echo 'VAULTS:' ${userVaults//$'\n'/', '} >> test.csv
+			echo 'VAULTS:' ${userVaults//$'\n'/', '} >> test.txt
 		done < <(printf '%s\n' $opusers)
 }
 
