@@ -9,7 +9,7 @@
 # vaults [vault1,vault2...]
 
 opusers=$(op list users --cache | jq --raw-output '.[].uuid')
-
+opGroups=$(op list groups -- cache | jq -r '.[].uuid')
 
 whileExport(){
 	while read -r line
@@ -29,4 +29,22 @@ whileExport(){
 }
 
 whileExport
+
+
+
+groupVaultAccess(){
+	while read -r line do
+		groupName=$(op get group $line | jq -r '.name')
+		
+		echo 'GROUP: ' $groupName
+		groupVaults=$(op list vaults --group $line | jq -r '.name')
+		
+		echo 'VAULTS: ' $groupVaults
+		
+	done < <(print '%s\n' $opGroups)
+}
+
+
+groupVaultAccess
+
 
