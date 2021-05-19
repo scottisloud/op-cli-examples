@@ -1,17 +1,12 @@
 #!/bin/bash
 
-# This will output to a CSV formatted as:
-# user [user name]
-# groups [group1,group2....]
-# vaults [vault1,vault2...]
-# user [user name]
-# groups [group1,group2....]
-# vaults [vault1,vault2...]
 
+
+# Get a list of all user UUID
 opusers=$(op list users --cache | jq --raw-output '.[].uuid')
-opGroups=$(op list groups -- cache | jq -r '.[].uuid')
 
-whileExport(){
+# Generate a file listing user, UUID, groups, and vaults
+userAccess(){
 	while read -r line
 		do
 			userName=$(op get user $line | jq --raw-output '.name')  # gets user's name based on UUID
@@ -28,23 +23,25 @@ whileExport(){
 		done < <(printf '%s\n' $opusers)
 }
 
-whileExport
+userAccess
 
 
 
-groupVaultAccess(){
-	while read -r line do
-		groupName=$(op get group $line | jq -r '.name')
-		
-		echo 'GROUP: ' $groupName
-		groupVaults=$(op list vaults --group $line | jq -r '.name')
-		
-		echo 'VAULTS: ' $groupVaults
-		
-	done < <(print '%s\n' $opGroups)
-}
 
 
-groupVaultAccess
 
 
+
+
+
+
+
+###########
+# This will output to a text file formatted as:
+# user [user name]
+# groups [group1,group2....]
+# vaults [vault1,vault2...]
+# user [user name]
+# groups [group1,group2....]
+# vaults [vault1,vault2...]
+############
