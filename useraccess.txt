@@ -1,0 +1,52 @@
+USER: Scott Lougheed (3ILIV374TNC27EXESGNGX7UF6Y)
+GROUPS: Owners, Administrators, Team Members, Marketing Team, Security, Provision Managers, Managers, activity monitors
+VAULTS: Help Desk, Special finance project, Toronto Office, Volunteer Committee, Secret Items for us, Client 1, Private, Marketing, Dept. Heads, Customer Success, Test, Example, Temp Passwords, Training Team, Justin <> Sarah, Example, Shared Justin & Christine, Example, example, Shared, Finance, DevOps, Front-end Dev, Special Project, Demo Vault 
+
+
+USER: Vanessa C (4YBZIIR4LVDR3AIEIHUZTJCASI)
+GROUPS: Owners, Administrators, Team Members
+VAULTS: Justin <> Sarah, Secret Items for us, Finance, Special Project, Customer Success, Test, Example, Temp Passwords, Toronto Office, Special finance project, Marketing, Front-end Dev, Demo Vault, Example, example, Example, Help Desk, Client 1, Shared, DevOps, Shared Justin & Christine, Dept. Heads, Training Team, Volunteer Committee 
+
+
+USER: Stephanie Cheng (EJRYIJ4L3RA5PJB5SUXHTV66BM)
+GROUPS: Owners, Administrators, Team Members, Marketing Team, Security, Recovery, IT Helpdesk
+VAULTS: Marketing, Finance, Toronto Office, Dept. Heads, Front-end Dev, Example, Volunteer Committee, Secret Items for us, Special Project, Test, Customer Success, Justin <> Sarah, example, DevOps, Shared Justin & Christine, Training Team, Demo Vault, Example, Example, Help Desk, Special finance project, Client 1, Shared, Temp Passwords 
+
+
+USER: Justin Hickmott (HJT27EHQJRGCXGMU2WE6XPCRHY)
+GROUPS: Owners, Administrators, Team Members, Security, Human Resources, Dept Heads, Managers, Group Managers, Special Initiative A, Team Leads
+VAULTS: Training Team, Special Project, Test, Help Desk, Toronto Office, Finance, DevOps, Shared Justin & Christine, Customer Success, Demo Vault, example, Example, Marketing, Dept. Heads, Special finance project, Client 1, Front-end Dev, Justin <> Sarah, Example, Secret Items for us, Shared, Example, Temp Passwords, Volunteer Committee 
+
+
+USER: Arnold Lan (7NKQJUMT25GFXFF7OMLVROGAQA)
+GROUPS: Owners, Administrators, Team Members, Marketing Team, Security, Help Desk, Human Resources, Group Managers, Special Initiative A
+VAULTS: Toronto Office, Secret Items for us, Client 1, Marketing, Dept. Heads, Customer Success, Demo Vault, Special Project, example, DevOps, Shared Justin & Christine, Training Team, Example, Volunteer Committee, Shared, Temp Passwords, Front-end Dev, Test, Help Desk, Special finance project, Finance, Example, Justin <> Sarah, Example 
+
+
+USER: Courtney Buffie (PU6FZ5NI2ZCV3CQOYMZMECKFSA)
+GROUPS: Owners, Administrators, Team Members, Security, DevOps Team, Dept Heads, IT Department, Special Initiative A, IT Helpdesk, Team Leads
+VAULTS: Dept. Heads, Special finance project, Toronto Office, Marketing, Secret Items for us, Client 1, Training Team, Justin <> Sarah, Example, Help Desk, Shared, Customer Success, Demo Vault, example, Example, Temp Passwords, DevOps, Front-end Dev, Test, Example, Volunteer Committee, Shared Justin & Christine, Special Project, Finance 
+
+
+USER: Sarah McKee (LUNS2P22KRE4RBU6RLX3E7LYWY)
+GROUPS: Owners, Administrators, Team Members, Security, End User Services, Managers
+VAULTS: Marketing, Justin <> Sarah, Front-end Dev, Training Team, Customer Success, Help Desk, Volunteer Committee, Shared, Shared Justin & Christine, Special finance project, Secret Items for us, Special Project, Temp Passwords, Demo Vault, Test, Example, example, DevOps, Dept. Heads, Example, Example, Toronto Office, Client 1, Finance 
+
+
+USER: Alex Melendez (G4OXX6LUJZFNZPYFXJXGXFXNRU)
+GROUPS: Owners, Administrators, Team Members, Security, DevOps Team, Human Resources, Dept Heads, Tax Seasonal, Managers, Group Managers
+VAULTS: Temp Passwords, Secret Items for us, Client 1, Marketing, DevOps, Front-end Dev, Demo Vault, Customer Success, Help Desk, Shared, Shared Justin & Christine, Example, Example, Training Team, Special Project, Justin <> Sarah, Example, example, Special finance project, Toronto Office, Volunteer Committee, Dept. Heads, Test, Finance 
+
+
+USER: Adam Pike (2555SJWLVNA7ZGINZCGZAIYMPA)
+GROUPS: Owners, Administrators, Team Members, Marketing Team, Security, DevOps Team, IT Department
+VAULTS: Shared Justin & Christine, Justin <> Sarah, Temp Passwords, Special finance project, Volunteer Committee, Marketing, Finance, Special Project, Customer Success, Example, example, Help Desk, Toronto Office, Front-end Dev, Training Team, Example, Test, Secret Items for us, Client 1, DevOps, Dept. Heads, Shared, Demo Vault, Example 
+
+
+USER: Dmitri Pasricha (BHXQT45TMVBFDF7A7RDGMKZTAQ)
+GROUPS: Owners, Administrators, Team Members, Marketing Team, Security, DevOps Team, Help Desk, Human Resources, Special Initiative A, IT Helpdesk, Team Leads
+VAULTS: Demo Vault, Help Desk, Toronto Office, Volunteer Committee, Shared, Shared Justin & Christine, Front-end Dev, Customer Success, example, Secret Items for us, Marketing, Training Team, Special Project, Test, Special finance project, Dept. Heads, Justin <> Sarah, Example, Example, Client 1, Finance, DevOps, Example, Temp Passwords 
+
+
+USER: Michael Guest (UJSL5XZ5ERHHRCSQGQCJGR4O5Q)
+GROUPS:
