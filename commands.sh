@@ -1,8 +1,3 @@
-# Get to correct directory
-cd /Users/scottatwork/op-cli-examples
-
-# Sign into 1Password
-eval $(op signin onboarding)
 
 
 # List all items in private vault
@@ -15,7 +10,7 @@ op list users | jq '.[] | {fname: .firstName}'
 op create item Login --title "OmniFocus" username="scottisloud" password=--generate-password url="https://omnigroup.com"
 
 # Invite a new user
-op create user "scott.lougheed+cli@agilebits.com" "1Password Rulez"
+op create user "[some real email address]" "[some great name]"
 
 # Confirm Users
 op confirm --all
@@ -25,13 +20,6 @@ op list users --group "Team Leads" | op get user - | jq '.name, .email'
 
 # get the details for all vaults that the Managers group has access to
 op list vaults --group Managers | op get vault - | jq
-
-
-
-### Live Demo ###
-#################
-# get to correct directory
-cd /Users/scottatwork/op-cli-examples
 
 
 # Create a csv with specific fields for items in a specific vault.  
