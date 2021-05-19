@@ -1,5 +1,14 @@
 #!/bin/bash
 
+###########
+# This will output to a text file formatted as:
+# user [user name]
+# groups [group1,group2....]
+# vaults [vault1,vault2...]
+# user [user name]
+# groups [group1,group2....]
+# vaults [vault1,vault2...]
+############
 
 
 # Get a list of all user UUID
@@ -25,23 +34,3 @@ userAccess(){
 
 userAccess
 
-
-
-
-
-
-
-
-
-
-
-
-###########
-# This will output to a text file formatted as:
-# user [user name]
-# groups [group1,group2....]
-# vaults [vault1,vault2...]
-# user [user name]
-# groups [group1,group2....]
-# vaults [vault1,vault2...]
-############
