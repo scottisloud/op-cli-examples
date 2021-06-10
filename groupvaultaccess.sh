@@ -3,7 +3,7 @@
 
 
 # Get a list of all group UUIDs
-opGroups=$(op list groups -- cache | jq -r '.[].uuid')
+opGroups=$(op list groups --cache | jq -r '.[].uuid')
 
 # List each group and every vault that group has access to
 groupVaultAccess(){

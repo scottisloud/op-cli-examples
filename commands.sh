@@ -1,5 +1,4 @@
 
-
 # List all items in private vault
 op list items --categories Login --vault Private | jq
 
