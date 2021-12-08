@@ -12,25 +12,24 @@
 
 
 # Get a list of all user UUID
-opusers=$(op list users --cache | jq --raw-output '.[].uuid')
+opusers=($(op list users --cache | jq --raw-output '.[].uuid'))
 
 # Generate a file listing user, UUID, groups, and vaults
-userAccess(){
-	while read -r line
-		do
-			userName=$(op get user $line | jq --raw-output '.name')  # gets user's name based on UUID
-			echo 'USER:' $userName "($line)" >> useraccess.txt
-		
-			# GROUPS - For each group the person is a member of, append it to a variable separated by a comma, then append the entire string to a csv file
-			userGroups=$(op list groups --user $line | jq --raw-output '.[].name')
-			echo 'GROUPS:' ${userGroups//$'\n'/', '} >> useraccess.txt
-		
-			# VAULTS - For each vault the person has access to, append it to a variable separated by a comma, then append the entire string to a csv file
-			userVaults=$(op list vaults --user $line | jq --raw-output '.[].name')
-			echo 'VAULTS:' ${userVaults//$'\n'/', '} "\n\n" >> useraccess.txt
+for user in $opusers
+	do
+		userName=$(op get user $user | jq --raw-output '.name')  # gets user's name based on UUID
+		echo 'USER:' $userName "($user)" >> useraccess.txt
 	
-		done < <(printf '%s\n' $opusers)
-}
+		# GROUPS - For each group the person is a member of, append it to a variable separated by a comma, then append the entire string to a csv file
+		userGroups=$(op list groups --user $user | jq --raw-output '.[].name')
+		echo 'GROUPS:' ${userGroups//$'\n'/', '} >> useraccess.txt
+	
+		# VAULTS - For each vault the person has access to, append it to a variable separated by a comma, then append the entire string to a csv file
+		userVaults=$(op list vaults --user $user | jq --raw-output '.[].name')
+		echo 'VAULTS:' ${userVaults//$'\n'/', '} "\n\n" >> useraccess.txt
 
-userAccess
+	done
+
+
+
 
